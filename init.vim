@@ -20,10 +20,10 @@ syntax on
 set number
 
 " Highlight cursor line underneath the cursor horizontally.
-"set cursorline
+set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
-"set cursorcolumn
+set cursorcolumn
 
 " Set shift width to 4 spaces.
 "set shiftwidth=4
@@ -67,3 +67,9 @@ set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=100
+
+let g:filetype_pl="prolog"
+
+call plug#begin('./plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()

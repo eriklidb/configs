@@ -17,7 +17,7 @@ font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 8
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -55,10 +55,10 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+odiaeresis focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -67,10 +67,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+odiaeresis move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -79,17 +79,17 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+q split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+w split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+z layout stacking
+bindsym $mod+x layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -102,7 +102,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+s focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -156,10 +156,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym odiaeresis resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -178,23 +178,55 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	position top
+	height 20
+	colors {
+		statusline #ffffff
+	}
         status_command i3status
 }
 
-#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-#font pango:DejaVu Sans Mono 10
-#font pango:DejaVu Sans Mono, Alacritty  Bold Semi-Condensed 11
-#font pango:Alacritty 11px
-
 # Set gap size.
-gaps inner 20
+gaps inner 10
 gaps outer 10
+
+# Adjust gap size.
+bindsym $mod+plus gaps inner current minus 5
+bindsym $mod+minus gaps inner current plus 5
 
 # Disable titlebars.
 for_window [class="^.*"] border pixel 1
 
 # Set wallpaper.
-exec feh --bg-fill /home/erik/Pictures/autumn-nature-4k-vn-1920x1080.jpg
+exec feh --bg-fill $WALLPAPERS/$WALLPAPER
 
 # Start composite manager.
 exec picom
+
+# Set default brightness.
+exec brightnessctl set 50%
+
+# Set keybindings.
+exec xbindkeys
+
+# Move floating window;
+mode "moveit" {
+    bindsym k move up 20px
+    bindsym h move left 20px
+    bindsym j move down 20px
+    bindsym l move right 20px
+
+    bindsym Up move up 20px
+    bindsym Left move left 20px
+    bindsym Down move down 20px
+    bindsym Right move right 20px
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Mod4+m mode "default"
+}
+bindsym Mod4+m focus floating; mode "moveit"
+
+# Scratchpad.
+bindsym $mod+n scratchpad show
+bindsym $mod+Shift+n move scratchpad
