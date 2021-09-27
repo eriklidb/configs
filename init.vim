@@ -26,13 +26,13 @@ set cursorline
 set cursorcolumn
 
 " Set shift width to 4 spaces.
-"set shiftwidth=4
+set shiftwidth=4
 
 " Set tab width to 4 columns.
-"set tabstop=4
+set tabstop=4
 
 " Use space characters instead of tabs.
-"set expandtab
+" set expandtab
 
 " Do not save backup files.
 set nobackup
@@ -68,8 +68,8 @@ set hlsearch
 " Set the commands to save in history default number is 20.
 set history=100
 
-let g:filetype_pl="prolog"
+call plug#begin('~/.config/nvim/plugged')
 
-call plug#begin('./plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
