@@ -89,14 +89,23 @@
 "brightnessctl set 5%-"
   XF86MonBrightnessDown
 
+"playerctl previous"
+  alt + minus
+
+"playerctl play-pause"
+  XF86AudioPlay
+
+"playerctl next"
+  XF86AudioNext
+
+"playerctl previous"
+  XF86AudioPrev
+
 "playerctl play-pause"
   alt + p
 
 "playerctl next"
   alt + plus
-
-"playerctl previous"
-  alt + minus
 
 "$TERMINAL -e alsamixer"
   alt + Shift + m
@@ -112,6 +121,12 @@
 
 "$TERMINAL -e htop"
   control + alt + Delete  
+
+"poweroff"
+  control + alt + shift + e
+
+"reboot"
+  control + alt + shift + r
 
 ##################################
 # End of xbindkeys configuration #
