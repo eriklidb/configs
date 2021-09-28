@@ -1,0 +1,19 @@
+#
+# ~/shrc
+#
+
+# Set aliases.
+alias ls='ls --color=auto'
+alias mcb='. /opt/mcb32tools/environment'
+alias q="exit"
+alias c="clear"
+alias s="sudo"
+alias e="$EDITOR"
+alias t="$TERMINAL"
+alias f="$FILEMANAGER"
+alias b="$BROWSER"
+alias p="sudo pacman"
+alias se="sudo $EDITOR"
+alias y="yay"
+alias m="neomutt"
+alias q='exit'

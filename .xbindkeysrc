@@ -110,6 +110,9 @@
 "$TERMINAL -e alsamixer"
   alt + Shift + m
 
+"$TERMINAL -e alsamixer"
+  alt + a
+
 "spotify"
   Alt+Alt_L + s
 
