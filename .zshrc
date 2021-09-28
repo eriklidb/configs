@@ -11,4 +11,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-[[ -f ~/.shrc ]] && . ~/.shrc
+PROMPT="%B%F{red}[%f%b%B%F{cyan}%n%f%b%B%F{magenta}@%f%b%B%F{yellow}%m%f%b%B%F{red} | %f%b%B%F{green}%D%f%b%B%F{red} | %f%b%B%F{blue}%~%f%b%B%F{red}]%f%b%B%% "
+
+#autoload -Uz promptinit
+#promptinit
+
+[[ -f ~/dotfiles/.shrc ]] && . ~/dotfiles/.shrc
