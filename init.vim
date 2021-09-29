@@ -68,6 +68,8 @@ set hlsearch
 " Set the commands to save in history default number is 20.
 set history=100
 
+let g:filetype_pl="prolog"
+
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

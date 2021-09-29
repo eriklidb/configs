@@ -2,5 +2,5 @@
 # ~/.bash_profile
 #
 
-[[ -f ~/.profile ]] && . ~/.profile
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/dotfiles/.profile ]] && . ~/dotfiles/.profile
+[[ -f ~/dotfiles/.bashrc ]] && . ~/dotfiles/.bashrc
