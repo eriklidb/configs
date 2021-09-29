@@ -80,6 +80,9 @@
 "firefox"
   c:64 + m:0x8 + b
 
+"firefox --private-window"
+  alt + control + b
+
 "xbindkeys"
   c:64 + m:0x8 + x
 

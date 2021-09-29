@@ -11,7 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-PROMPT="%B%F{red}[%f%b%B%F{cyan}%n%f%b%B%F{magenta}@%f%b%B%F{yellow}%m%f%b%B%F{red} | %f%b%B%F{green}%D%f%b%B%F{red} | %f%b%B%F{blue}%~%f%b%B%F{red}]%f%b%B%% "
+PROMPT="%B%F{red}[%f%b%B%F{cyan}%n%f%b%B%F{magenta}@%f%b%B%F{yellow}%m %f%b%B%F{green}%~%f%b%B%F{red}]%f%b%B%F{blue}%%%f%b%B%F{white} %f%b"
 
 #autoload -Uz promptinit
 #promptinit
