@@ -187,8 +187,8 @@ bar {
 }
 
 # Set gap size.
-gaps inner 10
-gaps outer 10
+gaps inner 15
+gaps outer 15
 
 # Adjust gap size.
 bindsym $mod+plus gaps inner current minus 5
@@ -196,18 +196,6 @@ bindsym $mod+minus gaps inner current plus 5
 
 # Disable titlebars.
 for_window [class="^.*"] border pixel 1
-
-# Set wallpaper.
-exec feh --bg-fill $WALLPAPERS/$WALLPAPER
-
-# Start composite manager.
-exec picom
-
-# Set default brightness.
-exec brightnessctl set 50%
-
-# Set keybindings.
-exec xbindkeys
 
 # Move floating window;
 mode "moveit" {
@@ -230,3 +218,15 @@ bindsym Mod4+m focus floating; mode "moveit"
 # Scratchpad.
 bindsym $mod+n scratchpad show
 bindsym $mod+Shift+n move scratchpad
+
+# Set wallpaper.
+exec feh --bg-fill $WALLPAPERS/$WALLPAPER
+
+# Start composite manager.
+exec picom
+
+# Set default brightness.
+exec brightnessctl set 50%
+
+# Set keybindings.
+exec xbindkeys

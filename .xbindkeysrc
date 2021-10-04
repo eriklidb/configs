@@ -119,6 +119,9 @@
 "spotify"
   Alt+Alt_L + s
 
+"scrot ~/screenshots/%Y-%m-%d%T-screenshot.png"
+  Alt+Alt_L + Shift + s
+
 "discord"
   alt + c
 
@@ -128,7 +131,7 @@
 "$TERMINAL -e htop"
   control + alt + Delete  
 
-"sudo systemctl halt"
+"sudo systemctl exit"
   control + alt + shift + e
 
 "sudo systemctl reboot"

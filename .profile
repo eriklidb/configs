@@ -24,3 +24,4 @@ export PATH=$PATH:$HOME/.config/coc/extensions/coc-clangd-data/install/12.0.1/cl
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	exec startx
 fi
+neofetch

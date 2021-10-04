@@ -16,4 +16,9 @@ PROMPT="%B%F{red}[%f%b%B%F{cyan}%n%f%b%B%F{magenta}@%f%b%B%F{yellow}%m %f%b%B%F{
 #autoload -Uz promptinit
 #promptinit
 
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+
+bindkey -M menuselect '^[[Z' reverse-menu-complete
+
 [[ -f ~/dotfiles/.shrc ]] && . ~/dotfiles/.shrc
