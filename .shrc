@@ -18,3 +18,4 @@ alias se="sudo $EDITOR"
 alias y="yay"
 alias m="neomutt"
 alias q='exit'
+alias dbas='psql -h psql-dd1368-ht21.sys.kth.se -U eriklidb -d kthlms'

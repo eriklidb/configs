@@ -66,22 +66,22 @@
 #  Control + b:2 + Release
 
 "$TERMINAL"
-  c:64 + m:0x8 + t
+  Control+Mod2+Mod4 + t
 
 "$TERMINAL --working-directory $NOTES -e $EDITOR"
-  c:64 + m:0x8 + n
+  Control+Mod2+Mod4 + n
 
 "$TERMINAL -e $FILEMANAGER"
-  c:64 + m:0x8 + f
+  Control+Mod2+Mod4 + f
 
 "$TERMINAL -e $EMAILCLIENT"
-  c:64 + m:0x8 + m
+  Control+Mod2+Mod4 + e
 
 "firefox"
-  c:64 + m:0x8 + b
+  Control+Mod2+Mod4 + b
 
 "firefox --private-window"
-  alt + control + b
+  Alt+Mod2+Mod4 + b
 
 "xbindkeys"
   c:64 + m:0x8 + x
@@ -91,9 +91,6 @@
 
 "brightnessctl set 5%-"
   XF86MonBrightnessDown
-
-"playerctl previous"
-  alt + minus
 
 "playerctl play-pause"
   XF86AudioPlay
@@ -105,37 +102,43 @@
   XF86AudioPrev
 
 "playerctl play-pause"
-  alt + p
+  Control+Mod2+Mod4 + p
 
 "playerctl next"
-  alt + plus
+  Control+Mod2+Mod4 + plus
+
+"playerctl previous"
+  Control+Mod2+Mod4 + minus
 
 "$TERMINAL -e alsamixer"
-  alt + Shift + m
+  Alt+Mod2+Mod4 + m
 
 "$TERMINAL -e alsamixer"
-  alt + a
+  Control+Mod2+Mod4 + a
 
 "spotify"
-  Alt+Alt_L + s
+  Control+Mod2+Mod4 + s
 
 "scrot ~/screenshots/%Y-%m-%d%T-screenshot.png"
-  Alt+Alt_L + Shift + s
+  Alt+Mod2+Mod4 + s
 
 "discord"
-  alt + c
+  Control+Mod2+Mod4 + d
 
 "discord"
-  alt + d
+  Control+Mod2+Mod4 + c
 
 "$TERMINAL -e htop"
-  control + alt + Delete  
+  Control + Alt + Delete  
+
+"$TERMINAL -e htop"
+  Alt+Mod2+Mod4 + t
 
 "sudo systemctl exit"
-  control + alt + shift + e
+  Control+Alt+Mod2+Mod4 + e
 
 "sudo systemctl reboot"
-  control + alt + shift + r
+  Control+Alt+Mod2+Mod4 + r
 
 ##################################
 # End of xbindkeys configuration #
