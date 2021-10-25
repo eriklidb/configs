@@ -1,0 +1,39 @@
+# vim: filetype=neomuttrc
+# muttrc file for account orka.palla@yahoo.se
+set realname = "orka.palla"
+set from = "orka.palla@yahoo.se"
+set sendmail = "msmtp -a orka.palla@yahoo.se"
+alias me orka.palla <orka.palla@yahoo.se>
+set folder = "/home/erik/.local/share/mail/orka.palla@yahoo.se"
+set header_cache = /home/erik/.cache/mutt-wizard/orka.palla@yahoo.se/headers
+set message_cachedir = /home/erik/.cache/mutt-wizard/orka.palla@yahoo.se/bodies
+set mbox_type = Maildir
+
+
+bind index,pager gg noop
+bind index,pager g noop
+bind index,pager M noop
+bind index,pager C noop
+bind index gg first-entry
+unmailboxes *
+unalternates *
+unset signature
+unmacro index o
+macro index o "<shell-escape>mw -y orka.palla@yahoo.se<enter>" "run mbsync to sync orka.palla@yahoo.se"
+
+mailboxes "=Archive" "=Bulk Mail" "=Draft" "=Inbox" "=Sent" "=Trash"
+macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
+macro index,pager Ma ";<save-message>=Archive<enter>" "move mail to archive"
+macro index,pager Ca ";<copy-message>=Archive<enter>" "copy mail to archive"
+macro index,pager gi "<change-folder>=Inbox<enter>" "go to inbox"
+macro index,pager Mi ";<save-message>=Inbox<enter>" "move mail to inbox"
+macro index,pager Ci ";<copy-message>=Inbox<enter>" "copy mail to inbox"
+set spoolfile = "+Inbox"
+set record = "+Sent"
+macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
+macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
+macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
+macro index,pager gt "<change-folder>=Trash<enter>" "go to trash"
+macro index,pager Mt ";<save-message>=Trash<enter>" "move mail to trash"
+macro index,pager Ct ";<copy-message>=Trash<enter>" "copy mail to trash"
+set trash = "+Trash"

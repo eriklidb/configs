@@ -1,0 +1,8 @@
+# vim: filetype=neomuttrc
+source /usr/share/mutt-wizard/mutt-wizard.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/erik/.config/mutt/accounts/1-erik@lidbjork.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to erik@lidbjork.com"
+source /home/erik/.config/mutt/accounts/1-erik@lidbjork.com.muttrc
+macro index,pager i2 '<sync-mailbox><enter-command>source /home/erik/.config/mutt/accounts/2-eriklidb@ug.kth.se.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to eriklidb@ug.kth.se"
+macro index,pager i3 '<sync-mailbox><enter-command>source /home/erik/.config/mutt/accounts/3-erik_lid@outlook.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to erik_lid@outlook.com"
+macro index,pager i4 '<sync-mailbox><enter-command>source /home/erik/.config/mutt/accounts/4-eriklidbjork@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to eriklidbjork@gmail.com"
+macro index,pager i5 '<sync-mailbox><enter-command>source /home/erik/.config/mutt/accounts/5-orka.palla@yahoo.se.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to orka.palla@yahoo.se"

@@ -1,0 +1,127 @@
+IMAPStore eriklidb@ug.kth.se-remote
+Host webmail.kth.se
+Port 993
+User eriklidb@ug.kth.se
+PassCmd "pass mail/eriklidb@ug.kth.se"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore eriklidb@ug.kth.se-local
+Subfolders Verbatim
+Path /home/erik/.local/share/mail/eriklidb@ug.kth.se/
+Inbox /home/erik/.local/share/mail/eriklidb@ug.kth.se/INBOX
+
+Channel eriklidb@ug.kth.se
+Expunge Both
+Far :eriklidb@ug.kth.se-remote:
+Near :eriklidb@ug.kth.se-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore erik_lid@outlook.com-remote
+Host imap-mail.outlook.com
+Port 993
+User erik_lid@outlook.com
+PassCmd "pass mail/erik_lid@outlook.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore erik_lid@outlook.com-local
+Subfolders Verbatim
+Path /home/erik/.local/share/mail/erik_lid@outlook.com/
+Inbox /home/erik/.local/share/mail/erik_lid@outlook.com/Inbox
+
+Channel erik_lid@outlook.com
+Expunge Both
+Far :erik_lid@outlook.com-remote:
+Near :erik_lid@outlook.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore eriklidbjork@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User eriklidbjork@gmail.com
+PassCmd "pass mail/eriklidbjork@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore eriklidbjork@gmail.com-local
+Subfolders Verbatim
+Path /home/erik/.local/share/mail/eriklidbjork@gmail.com/
+Inbox /home/erik/.local/share/mail/eriklidbjork@gmail.com/INBOX
+
+Channel eriklidbjork@gmail.com
+Expunge Both
+Far :eriklidbjork@gmail.com-remote:
+Near :eriklidbjork@gmail.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore orka.palla@yahoo.se-remote
+Host imap.mail.yahoo.com
+Port 993
+User orka.palla@yahoo.se
+PassCmd "pass mail/orka.palla@yahoo.se"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore orka.palla@yahoo.se-local
+Subfolders Verbatim
+Path /home/erik/.local/share/mail/orka.palla@yahoo.se/
+Inbox /home/erik/.local/share/mail/orka.palla@yahoo.se/Inbox
+
+Channel orka.palla@yahoo.se
+Expunge Both
+Far :orka.palla@yahoo.se-remote:
+Near :orka.palla@yahoo.se-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore erik@lidbjork.com-remote
+Host mail.lidbjork.com
+Port 993
+User erik@lidbjork.com
+PassCmd "pass mail/erik@lidbjork.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore erik@lidbjork.com-local
+Subfolders Verbatim
+Path /home/erik/.local/share/mail/erik@lidbjork.com/
+Inbox /home/erik/.local/share/mail/erik@lidbjork.com/INBOX
+
+Channel erik@lidbjork.com
+Expunge Both
+Far :erik@lidbjork.com-remote:
+Near :erik@lidbjork.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
