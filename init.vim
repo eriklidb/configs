@@ -41,7 +41,7 @@ set nobackup
 set scrolloff=10
 
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
+"set nowrap
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch
@@ -73,5 +73,11 @@ let g:filetype_pl="prolog"
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'lervag/vimtex'
+let g:tex_flavor = "latex"
+let g:vimtex_view_general_viewer = 'zathura'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()

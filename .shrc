@@ -2,22 +2,33 @@
 # ~/shrc
 #
 
-# Set aliases.
-alias ls='ls --color=auto'
 export PATH=$PATH:$HOME/kth-scripts
+
+# Set aliases.
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors)"
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -l'
+alias l='ls $LS_OPTIONS -lA'
+
+#alias rm='rm -i'
+#alias cp='cp -i'
+#alias mv='mv -i'
+
+alias s="sudo systemctl"
+alias j="sudo journalctl -xe"
+
 alias mcb='. /opt/mcb32tools/environment'
 alias q="exit"
 alias c="clear"
-alias s="sudo"
 alias e="$EDITOR"
 alias t="$TERMINAL"
 alias f="$FILEMANAGER"
 alias b="$BROWSER"
 alias p="sudo $PACKETMANAGER"
-alias s="sudo systemctl"
-alias j="sudo journalctl -x"
 alias se="sudo $EDITOR"
 alias y="yay"
 alias m="neomutt"
 alias q='exit'
 alias dbas='psql -h psql-dd1368-ht21.sys.kth.se -U eriklidb -d kthlms'
+alias weather='curl wttr.in'

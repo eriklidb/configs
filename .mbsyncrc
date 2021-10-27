@@ -10,7 +10,7 @@ CertificateFile /etc/ssl/certs/ca-certificates.crt
 MaildirStore eriklidb@ug.kth.se-local
 Subfolders Verbatim
 Path /home/erik/.local/share/mail/eriklidb@ug.kth.se/
-Inbox /home/erik/.local/share/mail/eriklidb@ug.kth.se/INBOX
+Inbox /home/erik/.local/share/mail/eriklidb@ug.kth.se/Inbox
 
 Channel eriklidb@ug.kth.se
 Expunge Both
@@ -61,7 +61,7 @@ CertificateFile /etc/ssl/certs/ca-certificates.crt
 MaildirStore eriklidbjork@gmail.com-local
 Subfolders Verbatim
 Path /home/erik/.local/share/mail/eriklidbjork@gmail.com/
-Inbox /home/erik/.local/share/mail/eriklidbjork@gmail.com/INBOX
+Inbox /home/erik/.local/share/mail/eriklidbjork@gmail.com/Inbox
 
 Channel eriklidbjork@gmail.com
 Expunge Both
