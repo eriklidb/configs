@@ -79,5 +79,11 @@ let g:tex_flavor = "latex"
 let g:vimtex_view_general_viewer = 'zathura'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
+
+map <F2> :setlocal spell<CR>
+map <F3> :set spelllang=en<CR> :set spellfile=$HOME/.config/nvim/spell/en.utf-8.add<CR> 
+map <F4> :set spelllang=sv<CR> :set spellfile=$HOME/.config/nvim/spell/sv.utf-8.add<CR> 
+map <F5> :setlocal spell!<CR>
