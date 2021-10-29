@@ -1,0 +1,60 @@
+account erik_lid@outlook.com
+host smtp-mail.outlook.com
+port 587
+from erik_lid@outlook.com
+user erik_lid@outlook.com
+passwordeval "pass mail/erik_lid@outlook.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/erik/.config/msmtp/msmtp.log
+# tls_starttls
+
+account eriklidbjork@gmail.com
+host smtp.gmail.com
+port 587
+from eriklidbjork@gmail.com
+user eriklidbjork@gmail.com
+passwordeval "pass mail/eriklidbjork@gmail.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/erik/.config/msmtp/msmtp.log
+# tls_starttls
+
+account eriklidb@ug.kth.se
+host smtp.kth.se
+port 465
+from eriklidb@ug.kth.se
+user eriklidb@ug.kth.se
+passwordeval "pass mail/eriklidb@ug.kth.se"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/erik/.config/msmtp/msmtp.log
+tls_starttls off
+
+account orka.palla@yahoo.se
+host smtp.mail.yahoo.com
+port 587
+from orka.palla@yahoo.se
+user orka.palla@yahoo.se
+passwordeval "pass mail/orka.palla@yahoo.se"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/erik/.config/msmtp/msmtp.log
+# tls_starttls
+
+account erik@lidbjork.com
+host mail.lidbjork.com
+port 465
+from erik@lidbjork.com
+user erik@lidbjork.com
+passwordeval "pass mail/erik@lidbjork.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/erik/.config/msmtp/msmtp.log
+tls_starttls off
+
