@@ -69,14 +69,14 @@ set hlsearch
 set history=100
 
 let g:filetype_pl="prolog"
+let g:tex_flavor = "latex"
+let g:vimtex_view_general_viewer = 'zathura'
 
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'lervag/vimtex'
-let g:tex_flavor = "latex"
-let g:vimtex_view_general_viewer = 'zathura'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'plasticboy/vim-markdown'

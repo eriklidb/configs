@@ -41,7 +41,7 @@ set nobackup
 set scrolloff=10
 
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
+"set nowrap
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch
@@ -67,3 +67,23 @@ set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=100
+
+let g:filetype_pl="prolog"
+let g:tex_flavor = "latex"
+let g:vimtex_view_general_viewer = 'zathura'
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'lervag/vimtex'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'plasticboy/vim-markdown'
+
+call plug#end()
+
+map <F2> :setlocal spell<CR>
+map <F3> :set spelllang=en<CR> :set spellfile=$HOME/.config/nvim/spell/en.utf-8.add<CR> 
+map <F4> :set spelllang=sv<CR> :set spellfile=$HOME/.config/nvim/spell/sv.utf-8.add<CR> 
+map <F5> :setlocal spell!<CR>
