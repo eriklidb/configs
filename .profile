@@ -21,7 +21,7 @@ export PATH=$PATH:$HOME/kth-scripts
 export PATH=$PATH:$HOME/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin
 
 # If TTY 1, start X.
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+if [ -f "/usr/bin/startx" ] && [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	exec startx
 fi
 neofetch

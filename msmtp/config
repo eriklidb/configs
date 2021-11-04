@@ -22,17 +22,17 @@ tls_trust_file	/etc/ssl/certs/ca-certificates.crt
 logfile /home/erik/.config/msmtp/msmtp.log
 # tls_starttls
 
-account eriklidb@ug.kth.se
+account eriklidb@kth.se
 host smtp.kth.se
-port 465
-from eriklidb@ug.kth.se
-user eriklidb@ug.kth.se
-passwordeval "pass mail/eriklidb@ug.kth.se"
+port 587
+from eriklidb@kth.se
+user eriklidb
+passwordeval "pass mail/eriklidb@kth.se"
 auth on
 tls on
 tls_trust_file	/etc/ssl/certs/ca-certificates.crt
 logfile /home/erik/.config/msmtp/msmtp.log
-tls_starttls off
+# tls_starttls on
 
 account orka.palla@yahoo.se
 host smtp.mail.yahoo.com

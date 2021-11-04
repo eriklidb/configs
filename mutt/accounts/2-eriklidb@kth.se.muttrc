@@ -1,12 +1,12 @@
 # vim: filetype=neomuttrc
 # muttrc file for account eriklidb@ug.kth.se
 set realname = "eriklidb"
-set from = "eriklidb@ug.kth.se"
-set sendmail = "msmtp -a eriklidb@ug.kth.se"
+set from = "eriklidb@kth.se"
+set sendmail = "msmtp -a eriklidb@kth.se"
 alias me eriklidb <eriklidb@ug.kth.se>
-set folder = "/home/erik/.local/share/mail/eriklidb@ug.kth.se"
-set header_cache = /home/erik/.cache/mutt-wizard/eriklidb@ug.kth.se/headers
-set message_cachedir = /home/erik/.cache/mutt-wizard/eriklidb@ug.kth.se/bodies
+set folder = "/home/erik/.local/share/mail/eriklidb@kth.se"
+set header_cache = /home/erik/.cache/mutt-wizard/eriklidb@kth.se/headers
+set message_cachedir = /home/erik/.cache/mutt-wizard/eriklidb@kth.se/bodies
 set mbox_type = Maildir
 
 
@@ -19,7 +19,7 @@ unmailboxes *
 unalternates *
 unset signature
 unmacro index o
-macro index o "<shell-escape>mw -y eriklidb@ug.kth.se<enter>" "run mbsync to sync eriklidb@ug.kth.se"
+macro index o "<shell-escape>mw -y eriklidb@kth.se<enter>" "run mbsync to sync eriklidb@kth.se"
 
 mailboxes "=INBOX" "=Drafts" "=Junk" "=Trash" "=Sent" "=Archive"
 macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
