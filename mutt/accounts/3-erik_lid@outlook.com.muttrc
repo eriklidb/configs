@@ -21,14 +21,12 @@ unset signature
 unmacro index o
 macro index o "<shell-escape>mw -y erik_lid@outlook.com<enter>" "run mbsync to sync erik_lid@outlook.com"
 
-mailboxes "=Archive" "=Arkiv" "=Deleted/eriklidbjork@gmail.com/INBOX" "=Deleted/eriklidbjork@gmail.com/Personal" "=Deleted/eriklidbjork@gmail.com/Receipts" "=Deleted/eriklidbjork@gmail.com/Skickat" "=Deleted/eriklidbjork@gmail.com/Stj&AOQ-rnm&AOQ-rkta" "=Deleted/eriklidbjork@gmail.com/Utkast" "=Deleted/eriklidbjork@gmail.com/Work" "=Drafts" "=Inbox" "=Junk" "=Notes" "=Outbox" "=POP" "=Sent" "=Snoozed" "=Spambox" "=Sync Issues/Conflicts" "=Sync Issues/Local Failures" "=Sync Issues/Server Failures" "=Trash"
-macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
-macro index,pager Ma ";<save-message>=Archive<enter>" "move mail to archive"
-macro index,pager Ca ";<copy-message>=Archive<enter>" "copy mail to archive"
-macro index,pager gi "<change-folder>=Deleted/eriklidbjork@gmail.com/INBOX<enter>" "go to inbox"
-macro index,pager Mi ";<save-message>=Deleted/eriklidbjork@gmail.com/INBOX<enter>" "move mail to inbox"
-macro index,pager Ci ";<copy-message>=Deleted/eriklidbjork@gmail.com/INBOX<enter>" "copy mail to inbox"
-set spoolfile = "+Deleted/eriklidbjork@gmail.com/INBOX"
+mailboxes "=Arkiv" "=Drafts" "=Inbox" "=Junk" "=Notes" "=Sent" "=Snoozed"  "=Trash"
+#"=Sync Issues/Conflicts" "=Sync Issues/Local Failures" "=Sync Issues/Server Failures"
+
+macro index,pager ga "<change-folder>=Arkiv<enter>" "go to archive"
+macro index,pager Ma ";<save-message>=Arkiv<enter>" "move mail to archive"
+macro index,pager Ca ";<copy-message>=Arkiv<enter>" "copy mail to archive"
 set postponed = "+Drafts"
 macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
 macro index,pager Md ";<save-message>=Drafts<enter>" "move mail to drafts"

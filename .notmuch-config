@@ -1,0 +1,20 @@
+[database]
+path=/home/erik/.local/share/mail
+
+[user]
+name=Erik Lidbjörk
+primary_email=erik@lidbjork.com
+other_email=eriklidb@kth.se;erik_lid@outlook.com;eriklidbjork@gmail.com;orka.palla@yahoo.se;
+
+[new]
+tags=unread;inbox;
+ignore=.mbsyncstate;.uidvalidity
+
+[search]
+exclude_tags=deleted;spam;
+
+[maildir]
+synchronize_flags=true
+
+[crypto]
+gpg_path=gpg

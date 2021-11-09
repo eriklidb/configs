@@ -27,7 +27,7 @@ ExpireUnread no
 IMAPStore eriklidb@kth.se-remote
 Host webmail.kth.se
 Port 993
-User eriklidb@ug.kth.se
+User eriklidb
 PassCmd "pass mail/eriklidb@kth.se"
 AuthMechs LOGIN
 SSLType IMAPS
