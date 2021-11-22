@@ -69,17 +69,18 @@ set hlsearch
 set history=100
 
 let g:filetype_pl="prolog"
+let g:filetype_psql="sql"
 let g:tex_flavor = "latex"
-let g:vimtex_view_general_viewer = 'zathura'
+let g:vimtex_view_method='zathura'
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'lervag/vimtex'
+	Plug 'lervag/vimtex'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'plasticboy/vim-markdown'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 

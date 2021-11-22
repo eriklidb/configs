@@ -32,3 +32,4 @@ alias m="neomutt"
 alias q='exit'
 alias dbas='psql -h psql-dd1368-ht21.sys.kth.se -U eriklidb -d kthlms'
 alias weather='curl wttr.in'
+alias vpn="sudo openconnect -u eriklidb@kth.se vpn.lan.kth.se"

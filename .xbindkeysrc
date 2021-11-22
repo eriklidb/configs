@@ -83,6 +83,9 @@
 "firefox --private-window"
   Alt+Mod2+Mod4 + b
 
+"firefox -P xxx"
+  Control+Alt+Mod2+Mod4 + b
+
 "xbindkeys"
   c:64 + m:0x8 + x
 

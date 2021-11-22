@@ -988,4 +988,4 @@ schemes:
     cyan:    '0x80b1d3'
     white:   '0xfcfdfe'
 
-colors: *dracula
+colors: *nord
