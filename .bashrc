@@ -17,3 +17,5 @@ export PS1="\[\e[01;31m\][\[\e[m\]\[\e[01;36m\]\u\[\e[m\]\[\e[01;35m\]@\[\e[m\]\
 set -o vi
 
 [[ -f ~/dotfiles/.shrc ]] && . ~/dotfiles/.shrc
+
+alias mcb='. /opt/mcb32tools/environment'
