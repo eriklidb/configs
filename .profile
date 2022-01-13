@@ -14,6 +14,7 @@ export NOTES=$HOME/notes
 export WALLPAPER="winter-lake.jpg"
 export WALLPAPERS=$HOME/pictures/wallpapers
 export PACKETMANAGER='pacman'
+export C_INCLUDE_PATH='/opt/mcb32tools/lib:/usr/include'
 
 # Set PATH.
 export PATH=$PATH:$HOME/scripts

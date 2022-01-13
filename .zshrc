@@ -22,3 +22,5 @@ zmodload zsh/complist
 bindkey -M menuselect '^[[Z' reverse-menu-complete
 
 [[ -f ~/dotfiles/.shrc ]] && . ~/dotfiles/.shrc
+
+alias mcb='. /opt/mcb32tools/environment && PROMPT="[%F{green}mcb32%f] %B%F{red}[%f%b%B%F{cyan}%n%f%b%B%F{magenta}@%f%b%B%F{yellow}%m %f%b%B%F{green}%~%f%b%B%F{red}]%f%b%B%F{blue}%%%f%b%B%F{white} %f%b"'

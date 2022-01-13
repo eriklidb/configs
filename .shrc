@@ -18,7 +18,6 @@ alias l='ls $LS_OPTIONS -lA'
 alias s="sudo systemctl"
 alias j="sudo journalctl -xe"
 
-alias mcb='. /opt/mcb32tools/environment'
 alias q="exit"
 alias c="clear"
 alias e="$EDITOR"
