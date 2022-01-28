@@ -867,7 +867,8 @@
   #print_events: false
  
 # Set transparancy
-background_opacity: 0.925 
+# background_opacity: 0.925 
+window.opacity: 0.925 
 
 
 schemes:
