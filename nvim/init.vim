@@ -247,6 +247,11 @@ let g:filetype_psql="sql"
 let g:tex_flavor = "latex"
 let g:vimtex_view_method='zathura'
 
+"let g:powerline_pycmd="py3"
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
+
 " VimPlug.
 call plug#begin('~/.config/nvim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -254,6 +259,12 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'plasticboy/vim-markdown'
     Plug 'udalov/kotlin-vim'
+    "Plug 'puremourning/vimspector'
+    Plug 'tpope/vim-fugitive'
+    Plug 'gregsexton/gitv', {'on': ['Gitv']}
+    Plug 'airblade/vim-gitgutter'
+    Plug 'preservim/nerdtree'
+    Plug 'preservim/nerdcommenter'
 call plug#end()
 
 " Spell correction.
@@ -261,3 +272,9 @@ map <F2> :setlocal spell<CR>
 map <F3> :set spelllang=en<CR> :set spellfile=$HOME/.config/nvim/spell/en.utf-8.add<CR> 
 map <F4> :set spelllang=sv<CR> :set spellfile=$HOME/.config/nvim/spell/sv.utf-8.add<CR> 
 map <F5> :setlocal spell!<CR>
+
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
